@@ -16,7 +16,7 @@ import java.util.Date;
 public class JwtUtils {
 
     @Value("${app.jwt.secret}")
-    private String jstSecret;
+    private String jwtSecret;
 
     @Value("${app.jwt.expiration-ms}")
     private long jwtExpirationMs;
@@ -33,7 +33,7 @@ public class JwtUtils {
     }
 
     public String getUsernameFromJwtToken(String token) {
-        return Jwts.parserBuilder()
+        return Jwts.parser()
                 .setSigningKey(getSignatureKey())
                 .build()
                 .parseClaimsJws(token).getBody().getSubject();
@@ -41,7 +41,7 @@ public class JwtUtils {
 
     public boolean validateJwtToken(String authToken) {
         try{
-            Jwts.parserBuilder().setSigningKey(getSignatureKey()).build().parseClaimsJws(authToken);
+            Jwts.parser().setSigningKey(getSignatureKey()).build().parseClaimsJws(authToken);
             return true;
         } catch (MalformedJwtException e){
             log.error("Token JWT inválido: {}", e.getMessage());
@@ -56,6 +56,6 @@ public class JwtUtils {
     }
 
     private Key getSignatureKey() {
-        return Keys.hmacShaKeyFor(jstSecret.getBytes());
+        return Keys.hmacShaKeyFor(jwtSecret.getBytes());
     }
 }

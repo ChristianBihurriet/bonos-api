@@ -19,4 +19,6 @@ public interface BonoService {
     Bono actualizarBono(Integer id, Bono bono);
 
     void eliminarBono(Integer id);
+
+    List<Bono> obtenerBonosPorUsuario(User user);
 }

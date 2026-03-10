@@ -30,6 +30,7 @@ public class BonoServiceImpl implements BonoService{
         return bonoRepository.findById(id).orElseThrow(() -> new RuntimeException("Bono no encontrado"));
     }
 
+    @Override
     public List<Bono> obtenerBonosPorUsuario(User user) {
         return bonoRepository.findByCreator(user);
     }
@@ -38,7 +39,7 @@ public class BonoServiceImpl implements BonoService{
     public Bono actualizarBono(Integer id, Bono bonoActualizado) {
         Bono bono = obtenerBonoPorId(id);
 
-        bono.setServicio(bonoActualizado .getServicio());
+        bono.setServicio(bonoActualizado.getServicio());
         bono.setComprador(bonoActualizado.getComprador());
         bono.setPrecio(bonoActualizado.getPrecio());
         bono.setFechaCompra(bonoActualizado.getFechaCompra());
@@ -47,7 +48,7 @@ public class BonoServiceImpl implements BonoService{
 
         return bonoRepository.save(bono);
     }
-
+    @Override
     public void eliminarBono(Integer id) {
 
         Bono bono = obtenerBonoPorId(id);
