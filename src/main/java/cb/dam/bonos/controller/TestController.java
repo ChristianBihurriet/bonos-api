@@ -1,4 +1,4 @@
-package cb.dam.secureapibackend.controller;
+package cb.dam.bonos.controller;
 
 
 import org.springframework.web.bind.annotation.GetMapping;

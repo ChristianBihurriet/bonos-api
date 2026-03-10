@@ -1,8 +1,8 @@
-package cb.dam.secureapibackend.service;
+package cb.dam.bonos.service;
 
 
-import cb.dam.secureapibackend.model.User;
-import cb.dam.secureapibackend.repository.UserRepository;
+import cb.dam.bonos.model.User;
+import cb.dam.bonos.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

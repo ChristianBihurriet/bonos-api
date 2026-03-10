@@ -1,7 +1,7 @@
-package cb.dam.secureapibackend.controller;
+package cb.dam.bonos.controller;
 
-import cb.dam.secureapibackend.dto.LoginRequest;
-import cb.dam.secureapibackend.service.AuthService;
+import cb.dam.bonos.dto.LoginRequest;
+import cb.dam.bonos.service.AuthService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

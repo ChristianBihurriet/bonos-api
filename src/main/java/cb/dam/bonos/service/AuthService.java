@@ -1,13 +1,13 @@
-package cb.dam.secureapibackend.service;
+package cb.dam.bonos.service;
 
 
-import cb.dam.secureapibackend.dto.JwtResponse;
-import cb.dam.secureapibackend.dto.LoginRequest;
-import cb.dam.secureapibackend.dto.MessageResponse;
-import cb.dam.secureapibackend.model.Role;
-import cb.dam.secureapibackend.model.User;
-import cb.dam.secureapibackend.repository.UserRepository;
-import cb.dam.secureapibackend.security.JwtUtils;
+import cb.dam.bonos.dto.JwtResponse;
+import cb.dam.bonos.dto.LoginRequest;
+import cb.dam.bonos.dto.MessageResponse;
+import cb.dam.bonos.model.Role;
+import cb.dam.bonos.model.User;
+import cb.dam.bonos.repository.UserRepository;
+import cb.dam.bonos.security.JwtUtils;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

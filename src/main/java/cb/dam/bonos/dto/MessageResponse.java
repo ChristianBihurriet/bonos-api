@@ -1,4 +1,4 @@
-package cb.dam.secureapibackend.dto;
+package cb.dam.bonos.dto;
 
 
 public class MessageResponse {

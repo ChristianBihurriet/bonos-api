@@ -1,6 +1,6 @@
-package cb.dam.secureapibackend.service;
+package cb.dam.bonos.service;
 
-import cb.dam.secureapibackend.model.User;
+import cb.dam.bonos.model.User;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;

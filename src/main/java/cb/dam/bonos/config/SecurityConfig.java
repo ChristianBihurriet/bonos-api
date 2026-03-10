@@ -1,9 +1,9 @@
-package cb.dam.secureapibackend.config;
+package cb.dam.bonos.config;
 
 
-import cb.dam.secureapibackend.security.AuthTokenFilter;
-import cb.dam.secureapibackend.security.JwtAuthenticationEntryPoint;
-import cb.dam.secureapibackend.security.JwtUtils;
+import cb.dam.bonos.security.AuthTokenFilter;
+import cb.dam.bonos.security.JwtAuthenticationEntryPoint;
+import cb.dam.bonos.security.JwtUtils;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

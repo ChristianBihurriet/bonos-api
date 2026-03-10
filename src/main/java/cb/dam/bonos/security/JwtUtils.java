@@ -1,4 +1,4 @@
-package cb.dam.secureapibackend.security;
+package cb.dam.bonos.security;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;

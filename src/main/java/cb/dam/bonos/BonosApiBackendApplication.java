@@ -1,13 +1,13 @@
-package cb.dam.secureapibackend;
+package cb.dam.bonos;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SecureApiBackendApplication {
+public class BonosApiBackendApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SecureApiBackendApplication.class, args);
+        SpringApplication.run(BonosApiBackendApplication.class, args);
     }
 
 }

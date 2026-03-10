@@ -1,4 +1,4 @@
-package cb.dam.secureapibackend.exception;
+package cb.dam.bonos.exception;
 
 
 import jakarta.validation.ConstraintViolationException;

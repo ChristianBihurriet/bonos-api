@@ -1,4 +1,4 @@
-package cb.dam.secureapibackend.model;
+package cb.dam.bonos.model;
 
 public enum Role {
     ROLE_USER,

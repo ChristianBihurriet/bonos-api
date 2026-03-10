@@ -1,7 +1,7 @@
-package cb.dam.secureapibackend.security;
+package cb.dam.bonos.security;
 
-import cb.dam.secureapibackend.model.User;
-import cb.dam.secureapibackend.repository.UserRepository;
+import cb.dam.bonos.model.User;
+import cb.dam.bonos.repository.UserRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;

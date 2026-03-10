@@ -1,4 +1,4 @@
-package cb.dam.secureapibackend.dto;
+package cb.dam.bonos.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;

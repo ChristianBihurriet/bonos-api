@@ -1,7 +1,7 @@
-package cb.dam.secureapibackend.repository;
+package cb.dam.bonos.repository;
 
 
-import cb.dam.secureapibackend.model.User;
+import cb.dam.bonos.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import java.util.Optional;
