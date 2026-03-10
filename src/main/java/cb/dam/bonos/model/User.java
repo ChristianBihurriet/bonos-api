@@ -6,6 +6,8 @@ import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -30,6 +32,11 @@ public class User extends BaseEntity {
     @ElementCollection(fetch = FetchType.EAGER)
     @Enumerated(EnumType.STRING)
     private Set<Role> roles;
+
+    @OneToMany(mappedBy = "creator")
+    @JsonIgnore
+    private List<Bono> bonos;
+
 
     public User(String username, String password) {
         this.username = username;
